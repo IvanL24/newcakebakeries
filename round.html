@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="round" id="roundcake">
+        <table>
+          <tr>
+            <td>
+              Cake Radius:
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="number" min="15" max="30" value="15" id="radius">cm
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cake-type">
+        <table>
+          <!-- Additonal menu -->
+          <tr>
+              <td colspan="2">
+                  <b>Additonal Choices:</b>
+              </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="cream" id="cheese"> Cream Cheese icing</td>
+            <td>$5.00</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="fruit" id="fruit"> Fruit and Almonds topping</td>
+            <td>$7.00</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="jam" id="filling"> Fruit jam filling between layers</td>
+            <td>$4.00</td>
+          </tr>
+          <tr>
+            <td>Number of Layers:</td>
+            <td>
+              <select name="layer" id="layer">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <script src="js/script.js"></script>
+
+</body>
+</html>

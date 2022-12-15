@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="css/main.css">
+  <script src="js/script.js"></script>
+
+  <title>New City Bakeries</title>
+</head>
+<body >
+  <div class="container">
+    <form class="personal_info">
+      <table id="info" class="info">
+          <tr>
+              <th colspan="2">New Cake Bakeries</th>
+          </tr>
+        <tr>
+          <td colspan="2">Name:</td>
+        </tr>
+        <tr>
+          <td><input id="first" type="text" pattern="[a-zA-Z-]" placeholder="Firstname" required autofocus><span class="firsterror" id="firstError">Field required</span></td>
+          <td><input id="last" type="text" pattern="[a-zA-Z][a-zA-Z-]" placeholder="Lastname" required><span class="lasterror" id="lastError">Field required</span></td>
+        </tr>
+        <tr>
+          <td colspan="2">Address:</td>
+
+        </tr>
+        <tr>
+          <td colspan="2"><input type="text" name="address" id="address" required></td>
+        </tr>
+        <tr>
+          <td>Phone number:</td>
+          <td>Postal Code:</td>
+        </tr>
+        <tr>
+          <td><input type="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><span class="phoneerror" id="phoneError">Field required</span></td>
+          <td><input type="text" id="postal" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required><span class="postalerror" id="postalError">Field required</span></td>
+
+        </tr>
+        <tr>
+          <td colspan="2">Email:</td>
+
+        </tr>
+        <tr>
+          <td colspan="2"><input id="email" type="email" value=""></td>
+        </tr>
+      </table>
+    </form>
+    <!-- <div class="logo">
+      <img src="img/final.png" alt="">
+    </div>    -->
+
+    <div class="container2">
+        
+        <div class="menu2">
+          <h2>Build your cake</h2>
+          <p>Select your ideal cake shape</p>
+          <div class="cakeOption">
+            <button id="callSquare" onclick="getSquare()">Square</button>
+            <button id="callRound" onclick="getRound()">Round</button>
+          </div>
+          <div id="cakeconfig"></div>
+        </div>
+        
+      </div>
+    
+      <div class="order">
+        <div class="summary">
+          <h1>Order Summary:</h1>
+          <div id="menu_content">
+            <div class="customer_info">
+              <ul>
+                <li id="name"></li>
+                <li id="pickup"></li>
+                <li id="postalcode"></li>
+                <li id="phone"></li>
+                <li id="emailadd"></li>
+              </ul>
+            </div>
+            <div class="order_info">
+              <ul>
+                <li id="quatroOrder"></li>
+                <li id="capicciosaOrder"></li>
+                
+              </ul>
+              <table>
+                  <tr>
+                      <td id="cakedetail"></td>
+                      <td id="cakecost"></td>
+                  </tr>
+                  <tr>
+                      <td id="cream"></td>
+                      <td id="creamprice"></td>
+                  </tr>
+                  <tr>
+                      <td id="almond"></td>
+                      <td id="almondprice"></td>
+                  </tr>
+                  <tr>
+                      <td id="jam"></td>
+                      <td id="jamprice"></td>
+                  </tr>
+                  <tr>
+                      <td>Total:</td>
+                      <td id="total"></td>
+                  </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="orderCake" onclick="placeOrder()">Order</button>
+  </div>
+
+</body>
+</html>

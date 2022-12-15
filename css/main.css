@@ -1,0 +1,270 @@
+/* input {
+    border-width: 0px;
+    border-bottom-width: 1px;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg');
+
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+  .logo {
+    position: absolute;
+    transform: translate(36vw, -27vw);
+    width: 35vw;
+  }
+  
+  .logo img {
+    width: 35vw;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 75%;
+    padding: 0 3% 3% 3%;
+    background-color: #ffffffcf;
+    margin: 6em;
+  }
+
+  .personal_info {
+      width: 32%;
+  }
+
+  .caketype h1 {
+      margin: 0;
+  }
+  
+  form {
+      display: flex;
+    justify-content: center;
+    padding: 4% 5% 5% 5%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+  }
+  
+  /* form tr {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+  } */
+  
+  form td {
+    padding: 1%;
+    margin: 1%;
+  }
+  
+  form input {
+    height: 90%;
+    width: -webkit-fill-available;
+    padding: 0.5em;
+    border-radius: 8px;
+    border-width: 1px;
+  }
+  
+  .menu {
+    display: flex;
+    width: inherit;
+  }
+  
+  .menu div  {
+    padding: 0% 3%;
+    display: flex;
+    width: 80%;
+  }
+  
+  .menu div table th {
+    padding: 0 0 0.5em 0;
+    font-size: 1.3em;
+  }
+  
+  .menu div input {
+    width: 3em;
+    margin: 0 0 0 2em;
+  }
+  
+  .button {
+    /* position: absolute;
+    left: 10em;
+    top: 18em; */
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    /* margin: 1vw 0 1vw 17vw; */
+    width: 12%;
+    padding: 1%;
+    font-size: 18px;
+    border-radius: 25px;
+    color: black;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .firsterror {
+    display: none;
+    opacity: 0;
+    font-size: .7em;
+    color: tomato;
+  }
+  
+  .lasterror {
+    display: none;
+    opacity: 0;
+    font-size: .7em;
+    color: tomato;
+  }
+  
+  .phoneerror {
+    display: none;
+    opacity: 0;
+    font-size: .7em;
+    color: tomato;
+  }
+
+  .postalerror {
+    display: none;
+    opacity: 0;
+    font-size: .7em;
+    color: tomato;
+  }
+
+  .adderror {
+    display: none;
+    opacity: 0;
+    font-size: .7em;
+    color: tomato;
+  }
+  
+  .order {
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    padding: 0 3% 3% 3%;
+    background-color: #443322cf;
+    margin-top: 5em;
+  }
+
+
+
+  body {
+    background-image: url('../img/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.menu2 {
+    /* width: 32%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.945);
+
+}
+
+.cakeOption {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cakeOption button {
+  font-size: 20px;
+  padding: 0.2em 1em;
+  margin: 1em 2em;
+  width: 10rem;
+  border-radius: 10px;
+}
+
+.cake-type th{
+    padding: 1em 2em ;
+    font-size: 2em;
+}
+
+.cake-type td {
+    padding: 1em;
+}
+
+.cake-type input {
+    margin: 0.5em;
+}
+
+.cake-type select {
+    width: 5em;
+}
+
+/* .round {
+    display: none;
+}
+
+.square {
+    display: none;
+} */
+
+.orderCake {
+    /* position: absolute;
+    left: 10em;
+    top: 18em; */
+    border: 1px solid black;
+    margin-top: 2em;
+    /* margin: 1vw 0 1vw 17vw; */
+    width: 9em;
+    padding: 1em 0;
+    font-size: 18px;
+    border-radius: 25px;
+    color: black;
+  }
+
+button:hover {
+    background-color: rgb(196, 196, 196);
+}
+
+button:active{
+    background-color: rgb(128, 128, 128);
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.order .summary {
+    background-color: rgba(255, 255, 255, 0.945);
+    width: inherit;
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+  
+  

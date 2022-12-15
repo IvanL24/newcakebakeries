@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?xml version="1.0" encoding="UTF-8" ?>
+
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="square" id="squarecake">
+        <table>
+          <tr>
+            <td colspan="2">
+              <p>Cake Size:</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Length:</p>
+            </td>
+            <td>
+              <input type="number" id="length" class="length" min="30" max="60" value="30">cm
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Width:</p>
+            </td>
+            <td>
+              <input type="number" id="width" min="30" max="45" value="30">cm
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cake-type">
+        <table>
+          <!-- Additonal menu -->
+          <tr>
+              <td colspan="2">
+                  <b>Additonal Choices:</b>
+              </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="cream" id="cheese"> Cream Cheese icing</td>
+            <td>$5.00</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="fruit" id="fruit"> Fruit and Almonds topping</td>
+            <td>$7.00</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="jam" id="filling"> Fruit jam filling between layers</td>
+            <td>$4.00</td>
+          </tr>
+          <tr>
+            <td>Number of Layers:</td>
+            <td>
+              <select name="layer" id="layer">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      
+
+</body>
+</html>
